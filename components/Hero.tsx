@@ -22,9 +22,9 @@ const Hero: React.FC<HeroProps> = ({}) => {
         right="0"
       >
         <Image
-          width={1000}
+          width={928}
           src="/assets/Rectangle-1893.png"
-          height={565}
+          height={567}
           alt="image hero home page"
         />
       </Box>
@@ -52,19 +52,19 @@ const Hero: React.FC<HeroProps> = ({}) => {
           textAlign={['center', 'center', 'center', 'start']}
           p={['', '', '', '5px 20px 5px 13px']}
           textShadow="0px 3px 4px rgb(0,0,0, 0.5)"
-          fontSize={[60]}
+          fontSize={['36px', '43px', '60px', '60px']}
           fontWeight="800"
           bg={['', '', 'none', 'white']}
         >
           Build or scale up
         </Text>
 
-        <Text p="5px 13px" fontSize={['28px', '28px', '38px', '63px']}>
+        <Text p="5px 13px" fontSize={['22px', '22px', '38px', '63px']}>
           Your development team
         </Text>
 
         <Flex
-          ml={4}
+          ml={[0, 0, 0, 4]}
           align="center"
           direction={['column-reverse', 'column-reverse', 'column-reverse', 'row']}
           gap="15px"

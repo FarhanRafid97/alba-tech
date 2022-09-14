@@ -8,16 +8,19 @@ const Consultation: React.FC<ConsultationProps> = ({}) => {
       direction="column"
       w="80%"
       m="auto"
-      mt={60}
+      mt={['30px', '60px']}
+      mb="48px"
       h="223px"
       alignItems="center"
       justifyContent="space-between"
       p="32px"
       bg="albaPrimary"
-      borderRadius="8px"
+      borderRadius="15px"
     >
-      <Text>Is software important for your business?</Text>
-      <Text>Build With Albatech</Text>
+      <Text textAlign="center" fontSize={['12px', '14px', '14px', '16px']}>
+        Is software important for your business?
+      </Text>
+      <Text fontSize={['12px', '28px', '32px', '38px']}>Build With Albatech</Text>
       <ButtonAlba text="Consultation Now" borderColor="black" />
     </Flex>
   );

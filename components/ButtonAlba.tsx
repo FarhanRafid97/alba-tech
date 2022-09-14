@@ -13,7 +13,7 @@ const ButtonAlba: React.FC<ButtonAlbaProps> = ({ text, borderColor }) => {
       _hover={{ boxShadow: '12px 7px 24px -5px rgba(255,206,7,1)' }}
       borderRadius="30px"
       border={!borderColor ? '1px solid #FFCE07' : '1px solid black'}
-      fontSize={['12px', '14px', '14px', '14px']}
+      fontSize={['10px', '12px', '14px', '14px']}
     >
       {text}
     </Button>

@@ -5,6 +5,7 @@ import Link from 'next/link';
 import ButtonAlba from '../ButtonAlba';
 import MenuNavMobile from './MenuNavMobile';
 import navMenu from './navMenu.json';
+import navbarStyle from './navbar.module.css';
 interface NavbarProps {}
 
 const Navbar: React.FC<NavbarProps> = ({}) => {
@@ -23,7 +24,7 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
         <Box>
           <Image
             width={125}
-            height={60}
+            height={56}
             src="/assets/logo.png"
             alt={`logo PT Alba Digital Tecnology`}
           />
@@ -35,7 +36,14 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
         >
           {navMenu.map((menu) => (
             <Link key={menu.name} href={`/${menu.name}`}>
-              <Text display={['none', 'none', 'flex', 'flex']}>{menu.name}</Text>
+              <Text
+                position="relative"
+                cursor="pointer"
+                className={navbarStyle.navigasiLink}
+                display={['none', 'none', 'flex', 'flex']}
+              >
+                {menu.name}
+              </Text>
             </Link>
           ))}
 
