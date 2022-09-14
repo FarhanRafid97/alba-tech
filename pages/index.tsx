@@ -7,6 +7,8 @@ import Tech from '../components/product/Tech';
 import Progres from '../components/progres/Progres';
 import PortofolioSection from '../components/portofolio/PortofolioSection';
 import TestiSection from '../components/testimonial/TestiSection';
+import PartnerSection from '../components/partner/PartnerSection';
+import Consultation from '../components/consultation/Consultation';
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +20,8 @@ const Home: NextPage = () => {
         <Progres />
         <PortofolioSection />
         <TestiSection />
+        <PartnerSection />
+        <Consultation />
       </Box>
     </Layout>
   );

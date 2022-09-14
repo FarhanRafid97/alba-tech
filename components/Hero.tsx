@@ -36,7 +36,7 @@ const Hero: React.FC<HeroProps> = ({}) => {
       >
         <Image width={369} src="/assets/Group-32.png" height={66} alt="image hero home page" />
       </Box>
-      <Box position="absolute" right="900px" top="70px">
+      <Box position="absolute" right="900px" top="55px">
         <Image width={81} src="/assets/Group-3.png" height={66} alt="image hero home page" />
       </Box>
       <Flex
@@ -45,29 +45,31 @@ const Hero: React.FC<HeroProps> = ({}) => {
         rowGap="15px"
         alignItems={['center', 'center', 'center', 'start']}
         position={['relative', 'relative', 'relative', 'absolute']}
-        right={['0', '0', '0', '48%']}
-        top={['', '', '0', '150px']}
+        right={['0', '0', '0', '640px']}
+        top={['', '', '0', '110px']}
       >
-        <Heading
-          w={['', '', '', '469px']}
+        <Text
           textAlign={['center', 'center', 'center', 'start']}
-          p={['', '', '', '5px 0px 8px 13px']}
-          size="2xl"
+          p={['', '', '', '5px 20px 5px 13px']}
+          textShadow="0px 3px 4px rgb(0,0,0, 0.5)"
+          fontSize={[60]}
+          fontWeight="800"
           bg={['', '', 'none', 'white']}
         >
           Build or scale up
-        </Heading>
+        </Text>
 
-        <Text p="5px 13px" fontSize={['28px', '28px', '38px', '48px']}>
+        <Text p="5px 13px" fontSize={['28px', '28px', '38px', '63px']}>
           Your development team
         </Text>
 
         <Flex
+          ml={4}
           align="center"
           direction={['column-reverse', 'column-reverse', 'column-reverse', 'row']}
           gap="15px"
         >
-          <Box w="50px" h="4px" bg="#FFCE07"></Box>
+          <Box w="75px" h="5px" bg="albaPrimary"></Box>
           <Text>In weeks, not months</Text>
         </Flex>
         <ButtonAlba text="Book Now" />

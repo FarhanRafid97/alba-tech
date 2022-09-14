@@ -16,7 +16,7 @@ const Progres: React.FC<ProgresProps> = ({}) => {
     >
       <Text
         w={['full', 'full', '682px', '682px']}
-        color="#FFCE07"
+        color="albaPrimary"
         fontWeight="bold"
         fontSize={['18px', '18px', '22px', '24px']}
         textAlign="center"

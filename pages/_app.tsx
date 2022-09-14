@@ -1,9 +1,14 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 function MyApp({ Component, pageProps }: AppProps) {
+  const theme = extendTheme({
+    colors: {
+      albaPrimary: '#FFCE07',
+    },
+  });
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <Component {...pageProps} />
     </ChakraProvider>
   );

@@ -69,11 +69,11 @@ const TestiSection: React.FC<TestiSectionProps> = ({}) => {
               <Box
                 w="338px"
                 position={['relative', 'relative', 'relative', 'absolute']}
-                bottom={['none', 'none', 'none', '-60px']}
+                bottom={['none', 'none', 'none', '-70px']}
                 right={['none', 'none', 'none', '50px']}
               >
                 <Heading size="md">Amazing people</Heading>
-                <Text fontSize="13px">{`"They are people who are no only following the task,but can work as a team,Together."`}</Text>
+                <Text fontSize="13px">{`"They are people who are no only following the task, but can work as a team,Together."`}</Text>
                 <Box mt={4}>
                   <Text fontWeight="light">Matthijs Piest</Text>
                   <Text fontWeight="light" color="#C4C4C4">

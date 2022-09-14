@@ -19,6 +19,7 @@ const CardProduct: React.FC<CardProductProps> = ({ product }) => {
       height="193px"
       p="15px"
       boxShadow="md"
+      cursor="pointer"
       border="1px solid #dbdbdb"
       _hover={{ border: '1px solid #FFCE07', transition: '0.5s' }}
     >
@@ -30,7 +31,7 @@ const CardProduct: React.FC<CardProductProps> = ({ product }) => {
           alt={'productuct image'}
         />
       </Box>
-      <Text mt="10px" color="#FFCE07" fontWeight="bold">
+      <Text mt="10px" color="albaPrimary" fontWeight="bold">
         {product.title}
       </Text>
       <Text mt="10px"> {product.body}</Text>
