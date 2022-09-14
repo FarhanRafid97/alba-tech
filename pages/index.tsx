@@ -6,6 +6,7 @@ import ProductSection from '../components/product/ProductSection';
 import Tech from '../components/product/Tech';
 import Progres from '../components/progres/Progres';
 import PortofolioSection from '../components/portofolio/PortofolioSection';
+import TestiSection from '../components/testimonial/TestiSection';
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
         <Tech />
         <Progres />
         <PortofolioSection />
+        <TestiSection />
       </Box>
     </Layout>
   );

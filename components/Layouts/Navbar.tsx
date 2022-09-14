@@ -35,9 +35,7 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
         >
           {navMenu.map((menu) => (
             <Link key={menu.name} href={`/${menu.name}`}>
-              <Text display={['none', 'none', 'flex', 'flex']}>
-                {menu.name}
-              </Text>
+              <Text display={['none', 'none', 'flex', 'flex']}>{menu.name}</Text>
             </Link>
           ))}
 

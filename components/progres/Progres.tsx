@@ -33,7 +33,6 @@ const Progres: React.FC<ProgresProps> = ({}) => {
       >
         {progres.map((prog) => (
           <Flex
-            w={['', '250px', '350px', '300px']}
             direction="column"
             fontSize={['14px', '14px', '20px', '26px']}
             alignItems="center"

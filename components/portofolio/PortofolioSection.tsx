@@ -1,4 +1,5 @@
 import { Box, Flex, Heading, Text } from '@chakra-ui/react';
+import ButtonAlba from '../ButtonAlba';
 import portofolio from './listPortofolio.json';
 import PortofolioCard from './PortofolioCard';
 interface PortofolioSectionProps {}
@@ -16,11 +17,13 @@ const PortofolioSection: React.FC<PortofolioSectionProps> = ({}) => {
           flexWrap="wrap"
           justifyContent="center"
           gap={['20px 30px', '20px 30px', '20px 20px', '20px 30px']}
+          mb="34px"
         >
           {portofolio.map((porto) => (
             <PortofolioCard key={porto.title} porto={porto} />
           ))}
         </Flex>
+        <ButtonAlba text="Learn more" />
       </Flex>
     </Box>
   );
