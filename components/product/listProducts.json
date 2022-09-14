@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Website Development",
+    "body": "High-Perfomance website to reach out more your potential customers",
+    "image": "/assets/product/website.png",
+    "width": "60px",
+    "height": "50px"
+  },
+  {
+    "title": "Mobile apps development",
+    "body": "To accelerate your business process",
+    "image": "/assets/product/mobile.png",
+    "width": "41px",
+    "height": "58px"
+  },
+  {
+    "title": "Digital Product design",
+    "body": "Complete digital product creations from ux prototyping to final UI design",
+    "image": "/assets/product/digitalproduct.png",
+    "width": "59.88px",
+    "height": "60px"
+  },
+  {
+    "title": "Maintenance",
+    "body": "Make sure your digital enviroment kepp online and updated",
+    "image": "/assets/product/maintenance.png",
+    "width": "56px",
+    "height": "56px"
+  },
+  {
+    "title": "CMS development",
+    "body": "You can update your website content yourself",
+    "image": "/assets/product/cms.png",
+    "width": "46px",
+    "height": "53.67px"
+  },
+  {
+    "title": "Integreted payment gateway",
+    "body": "Simplify the payment system with just one step",
+    "image": "/assets/product/payment.png",
+    "width": "54px",
+    "height": "40.5px"
+  }
+]
