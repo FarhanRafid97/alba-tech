@@ -1,14 +1,17 @@
 [
   {
     "name": "design",
-    "progres": "1000+"
+    "start": 500,
+    "progres": 1000
   },
   {
     "name": "product",
-    "progres": "30+"
+    "start": 0,
+    "progres": 30
   },
   {
     "name": "Website Development",
-    "progres": "58+"
+    "start": 0,
+    "progres": 58
   }
 ]

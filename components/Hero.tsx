@@ -12,7 +12,7 @@ const Hero: React.FC<HeroProps> = ({}) => {
       minH="600px"
       mt={['15px', '35px', '55px', '100px']}
       pb={4}
-      alignItems="center"
+      alignItems="start"
     >
       <Box
         m="auto"
@@ -24,7 +24,7 @@ const Hero: React.FC<HeroProps> = ({}) => {
         <Image
           width={928}
           src="/assets/Rectangle-1893.png"
-          height={567}
+          height={564}
           alt="image hero home page"
         />
       </Box>
@@ -32,7 +32,7 @@ const Hero: React.FC<HeroProps> = ({}) => {
         position="absolute"
         display={['none', 'none', 'none', 'block']}
         right="300px"
-        bottom={['35px']}
+        bottom={['1px']}
       >
         <Image width={369} src="/assets/Group-32.png" height={66} alt="image hero home page" />
       </Box>
@@ -43,8 +43,9 @@ const Hero: React.FC<HeroProps> = ({}) => {
         zIndex="9"
         direction="column"
         rowGap="15px"
+        w="80%"
+        m="auto"
         alignItems={['center', 'center', 'center', 'start']}
-        position={['relative', 'relative', 'relative', 'absolute']}
         right={['0', '0', '0', '640px']}
         top={['', '', '0', '110px']}
       >

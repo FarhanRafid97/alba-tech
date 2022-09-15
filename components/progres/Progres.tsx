@@ -1,5 +1,6 @@
 import { Button, Text, Flex, Heading, Box } from '@chakra-ui/react';
 import progres from './progres.json';
+import CountUp from 'react-countup';
 interface ProgresProps {}
 
 const Progres: React.FC<ProgresProps> = ({}) => {
@@ -39,7 +40,16 @@ const Progres: React.FC<ProgresProps> = ({}) => {
             key={prog.name}
             color="white"
           >
-            <Text fontWeight="medium"> {prog.progres}</Text>
+            <Text fontWeight="medium">
+              <CountUp
+                start={prog.start}
+                end={prog.progres}
+                duration={1.5}
+                enableScrollSpy={true}
+                scrollSpyDelay={100}
+              />
+              +
+            </Text>
             <Text fontWeight="light">{prog.name}</Text>
           </Flex>
         ))}
