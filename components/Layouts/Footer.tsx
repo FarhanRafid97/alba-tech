@@ -2,6 +2,7 @@ import { Button, Text, Flex, Box } from '@chakra-ui/react';
 import { AiOutlineCopyrightCircle } from 'react-icons/ai';
 import Image from 'next/image';
 import navMenu from './navMenu.json';
+import navbarStyle from './navbar.module.css';
 interface FooterProps {}
 
 const Footer: React.FC<FooterProps> = ({}) => {
@@ -33,7 +34,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
           <Text fontWeight="bold">Website</Text>
           <Flex direction="column" mt="41px" rowGap="30.95px">
             {navMenu.map((menu) => (
-              <Text fontSize="14px" key={menu.name}>
+              <Text fontSize="14px" cursor="pointer" key={menu.name}>
                 {menu.name}
               </Text>
             ))}

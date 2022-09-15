@@ -4,8 +4,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ButtonAlba from '../ButtonAlba';
 import MenuNavMobile from './MenuNavMobile';
+
 import navMenu from './navMenu.json';
 import navbarStyle from './navbar.module.css';
+
 interface NavbarProps {}
 
 const Navbar: React.FC<NavbarProps> = ({}) => {
@@ -21,14 +23,16 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
       boxShadow="md"
     >
       <Flex w={['95%', '90%', '90%', '80%']} m="auto" justify="space-between">
-        <Box>
-          <Image
-            width={125}
-            height={56}
-            src="/assets/logo.png"
-            alt={`logo PT Alba Digital Tecnology`}
-          />
-        </Box>
+        <Link href="/" passHref>
+          <Box cursor="pointer">
+            <Image
+              width={125}
+              height={56}
+              src="/assets/logo.png"
+              alt={`logo PT Alba Digital Tecnology`}
+            />
+          </Box>
+        </Link>
         <Flex
           align="center"
           columnGap={['15px', '15px', '25px', '55px']}

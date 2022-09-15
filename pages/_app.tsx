@@ -1,16 +1,26 @@
-import '../styles/globals.css';
-import type { AppProps } from 'next/app';
+import { NextComponentType, NextPageContext } from 'next';
+import { SessionProvider } from 'next-auth/react';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
-function MyApp({ Component, pageProps }: AppProps) {
+import '../styles/globals.css';
+
+type AppProps = {
+  pageProps: any;
+  Component: NextComponentType<NextPageContext, any, {}> & { layoutProps: any };
+};
+
+function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   const theme = extendTheme({
     colors: {
       albaPrimary: '#FFCE07',
     },
   });
+
   return (
-    <ChakraProvider theme={theme}>
-      <Component {...pageProps} />
-    </ChakraProvider>
+    <SessionProvider session={session}>
+      <ChakraProvider theme={theme}>
+        <Component {...pageProps} />
+      </ChakraProvider>
+    </SessionProvider>
   );
 }
 
