@@ -8,7 +8,7 @@ const ProductSection: React.FC<ProductProps> = ({}) => {
     <Box w="full" mt={20}>
       <Flex direction="column" align="center" pt={4}>
         <Text color="#C4C4C4">Complet Package</Text>
-        <Heading textAlign="center" w="80%" size="lg" mt="18px" mb="30px">
+        <Heading textAlign="center" w="85%" size="lg" mt="18px" mb="30px">
           From product design to software continuous delivery
         </Heading>
         <Flex

@@ -34,7 +34,10 @@ const CardProduct: React.FC<CardProductProps> = ({ product }) => {
       <Text mt="10px" color="albaPrimary" fontWeight="bold">
         {product.title}
       </Text>
-      <Text mt="10px"> {product.body}</Text>
+      <Text mt="10px" fontSize={['12px', '12px', '14px', '14px']}>
+        {' '}
+        {product.body}
+      </Text>
     </Box>
   );
 };

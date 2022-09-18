@@ -33,7 +33,12 @@ const Home: NextPage = () => {
         <TestiSection />
         <PartnerSection />
         <Consultation />
-        <Box position="fixed" bottom="50px" zIndex="99" right="50px">
+        <Box
+          position="fixed"
+          bottom={['20px', '50px', '50px', '50px']}
+          zIndex="99"
+          right={['20px', '50px', '50px', '50px']}
+        >
           <Image src="/assets/WhatsApp.png" width={50} height={50} alt="contach whatsapp png" />
         </Box>
       </Box>

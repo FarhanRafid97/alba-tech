@@ -19,7 +19,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
         justifyContent={['center', 'center', 'space-between', 'space-between']}
         p={['60px 19px', '60px 19px', '40px 19px', '60px 69px']}
       >
-        <Box w={['300px', '300px', '300px', '400px']}>
+        <Box w={['230px', '300px', '300px', '400px']}>
           <Box>
             <Image src="/assets/logo.png" width="124.78px" height="55.57px" alt="logo alba tech" />
           </Box>
@@ -40,7 +40,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
             ))}
           </Flex>
         </Box>
-        <Box w="295px" ml={['0', '0', '0', '15px']}>
+        <Box w="245px" ml={['0', '0', '0', '15px']}>
           <Text fontWeight="bold">Contact</Text>
           <Text mt="41px" fontSize={['12px', '12px', '12px', '14px']}>
             The Prominence Block 38D No.25 jl.jalur Sutera Barat,Alam Sutera,Kota Tangerang,Banten
@@ -61,6 +61,8 @@ const Footer: React.FC<FooterProps> = ({}) => {
         m="auto"
         mt="24px"
         mb="55px"
+        alignItems="center"
+        direction={['column', 'row', 'row', 'row']}
         justifyContent="space-between"
       >
         <Flex alignItems="center">

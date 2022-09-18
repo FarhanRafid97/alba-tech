@@ -8,8 +8,8 @@ interface TestimoniLargeProps {
 const TestimoniLarge: React.FC<TestimoniLargeProps> = ({ title, body, width }) => {
   return (
     <Box maxW={width}>
-      <Heading>{title}</Heading>
-      <Text fontSize={['18px', '18px', '20px', '20px']} mt={4}>
+      <Heading size={['md', 'xl', 'xl', 'xl']}>{title}</Heading>
+      <Text fontSize={['12px', '18px', '20px', '20px']} mt={4}>
         {body}
       </Text>
       <Flex mt={4} columnGap="10px">

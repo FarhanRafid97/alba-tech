@@ -67,7 +67,7 @@ const TestiSection: React.FC<TestiSectionProps> = ({}) => {
               />
               <TestimoniMini />
               <Box
-                w="338px"
+                maxW="338px"
                 position={['relative', 'relative', 'relative', 'absolute']}
                 bottom={['none', 'none', 'none', '-70px']}
                 right={['none', 'none', 'none', '50px']}
