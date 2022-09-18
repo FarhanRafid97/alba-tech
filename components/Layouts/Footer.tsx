@@ -32,7 +32,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
         </Box>
         <Box mr="auto">
           <Text fontWeight="bold">Website</Text>
-          <Flex direction="column" mt="41px" rowGap="30.95px">
+          <Flex direction="column" mt="41px" rowGap={['30.95px', '20.95px', '20.95px', '30.95px']}>
             {navMenu.map((menu) => (
               <Text fontSize="14px" cursor="pointer" key={menu.name}>
                 {menu.name}

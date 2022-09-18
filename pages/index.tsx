@@ -10,6 +10,7 @@ import TestiSection from '../components/testimonial/TestiSection';
 import PartnerSection from '../components/partner/PartnerSection';
 import Consultation from '../components/consultation/Consultation';
 import Head from 'next/head';
+import Image from 'next/image';
 
 const Home: NextPage = () => {
   const seoDesc = `PT. Alba Digital Teknologi is a digital agency that has the tagline "Provide The Best Digital Experience for Your Business". We have to provide the best digital experience for our clients.
@@ -32,6 +33,9 @@ const Home: NextPage = () => {
         <TestiSection />
         <PartnerSection />
         <Consultation />
+        <Box position="fixed" bottom="50px" zIndex="99" right="50px">
+          <Image src="/assets/WhatsApp.png" width={50} height={50} alt="contach whatsapp png" />
+        </Box>
       </Box>
     </Layout>
   );

@@ -6,9 +6,9 @@ interface PortofolioSectionProps {}
 
 const PortofolioSection: React.FC<PortofolioSectionProps> = ({}) => {
   return (
-    <Box w="full" mt="64px">
+    <Box w="full" mt="64px" id="portofolio-section">
       <Flex direction="column" px="15px" align="center" pt={4}>
-        <Text color="#C4C4C4">Complet Package</Text>
+        <Text color="#C4C4C4">Portofolio</Text>
         <Heading maxW="525px" textAlign="center" size="xl" mt="18px" mb="30px">
           The software that we build takes our client to next level
         </Heading>

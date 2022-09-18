@@ -6,7 +6,7 @@ const Consultation: React.FC<ConsultationProps> = ({}) => {
   return (
     <Flex
       direction="column"
-      w="80%"
+      w={['90%', '90%', '80%', '80%']}
       m="auto"
       mt={['30px', '60px']}
       mb="48px"

@@ -22,9 +22,9 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
       borderBottom="1px solid #dbdbdb"
       boxShadow="md"
     >
-      <Flex w={['95%', '90%', '90%', '80%']} m="auto" justify="space-between">
+      <Flex w={['90%', '90%', '90%', '80%']} m="auto" justify="space-between" alignItems="center">
         <Link href="/" passHref>
-          <Box cursor="pointer">
+          <Box cursor="pointer" w={['80px', '80px', '110px', 125]}>
             <Image
               width={125}
               height={56}

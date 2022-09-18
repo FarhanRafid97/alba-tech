@@ -41,7 +41,7 @@ const TestiSection: React.FC<TestiSectionProps> = ({}) => {
         />
       </Box>
       <Flex direction="column" px="15px" align="center" pt={4}>
-        <Text color="#C4C4C4">Complet Package</Text>
+        <Text color="#C4C4C4">Testimonials</Text>
         <Heading maxW="452" textAlign="center" size="lg" mt="18px" mb="30px">
           What clients love in working with albatech team
         </Heading>
